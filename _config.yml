@@ -16,8 +16,7 @@
 title: semperfried.com
 email: edward.prislac@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Eddie Prislac is a formerly active U.S. Marine. 
-  Now he writes code, probably better than you.
+  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://semperfried.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: semperfried
