@@ -53,7 +53,7 @@ Like magic, we now have Rails loading the cache-busting, fingerprinted files we 
 
 ![New hotness](/assets/webpack-fingerprinting-after.png)
 
-I hope this helps someone, it was a pain in the ass to figure it out myself.
+I hope this helps someone, it was a pain in the ass to figure it out myself, mainly due to the lack of info on the subject, rather than the degree of difficulty.
 
 [rails-webpacker]: https://github.com/rails/webpacker#installation
 [cache-busting-angular-cli]: https://medium.com/@jonnysamps/cache-busting-with-angular-cli-916db52c8db0
