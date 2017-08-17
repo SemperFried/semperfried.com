@@ -5,10 +5,10 @@ date:   2017-08-16 17:24:47 -0500
 categories: ruby rails angular cache-busting fingerprinting
 ---
 
-If you're anything like me (and chances are, if you've found your way to this site, you are. Gawd help you.), you love making apps with Ruby on Rails apis and Angular front-ends, running as two separate applications, as the man upstairs intended. In the real world, however, we don't always get what we want... sometimes, your beautiful Angular application gets sandwiched into a legacy rails application, and said rails application still relies on sprockets for cache-busting. While this is all well and good for your legacy code (I guess), if your Angular app is built using the angular cli tool, you have the option of using webpack, which bundles support for those super-cool cache-busting hash-fingerprints that sprockets provides when compiling its assets. While the CLI's documentation says this feature is turned on by default, I found the opposite to be true, and my app would generate nothing but the plain-vanilla bundles (booo!). 
+If you're anything like me (and chances are, if you've found your way to this site, you are. Gawd help you.), you love making apps with Ruby on Rails apis and Angular front-ends, running as two separate applications, as the man upstairs intended. With your ideal setup, everything to do with the view layer of your application would be handled by Angular, leaving the model and controller to Rails. All minification, fingerprinting, etc... would be handled by webpack and seamlessly integrated into your application. In the real world, however, we don't always get what we want, and sometimes, your beautiful Angular application gets sandwiched into a legacy rails application, and said rails application still relies on sprockets for cache-busting. While this is all well and good for your legacy code (I guess), if your Angular app is built using the angular cli tool, you have the option of using webpack, which bundles support for those super-cool cache-busting hash-fingerprints that sprockets provides when compiling its assets. While the CLI's documentation says this feature is turned on by default, I found the opposite to be true, and my app would generate nothing but the plain-vanilla bundles (booo!). 
 ![Old busted junk](/assets/webpack-fingerprinting-before.png)
 
-I searched high and low for config options to turn this on, only to find out that the CLI team had hidden the webpack config by default, (it's not a bug, it's a *feature*) and were not planning on exposing it, at all. the only way you could expose the config was by 'ejecting' the cli, meaning I'd lose access to all the scripts provided by the cli, and would need to rewrite all my scripts to do without it. No, thank you. 
+I searched high and low for config options to turn this on, only to find out that 1. most of the [old articles][cache-busting-angular-cli] on the subject were now deprecated since Angular-CLI switched to webpack, and 2. the CLI team had hidden the webpack config by default, (it's not a bug, it's a *[feature][angular-cli-meets-webpack]*) and were not planning on exposing it, at all. the only way you could expose the config was by '[ejecting][eject]' the cli, meaning I'd lose access to all the scripts provided by the cli, and would need to rewrite all my scripts to do without it. No, thank you. 
 
 Luckily, the fix was pretty easy. We run all of our build scripts straight from npm, so most of our scripts are launched from `package.json`. 
 
@@ -52,3 +52,7 @@ Like magic, we now have Rails loading the cache-busting, fingerprinted files we 
 ![New hotness](/assets/webpack-fingerprinting-after.png)
 
 I hope this helps someone, it was a pain in the ass to figure it out myself.
+
+[cache-busting-angular-cli]: https://medium.com/@jonnysamps/cache-busting-with-angular-cli-916db52c8db0
+[angular-cli-meets-webpack]: https://medium.com/@jeff.boothe/angular-cli-meets-webpack-7c9b1a1e1e89
+[eject]: https://github.com/angular/angular-cli/wiki/eject
