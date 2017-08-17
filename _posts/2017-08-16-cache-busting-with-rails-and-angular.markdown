@@ -9,8 +9,8 @@ If you're anything like me (and chances are, if you've found your way to this si
 ![Old busted junk](/assets/webpack-fingerprinting-before.png)
 
 I searched high and low for config options to turn this on, only to find out that 
-  1. most of the [old articles][cache-busting-angular-cli] on the subject were now deprecated since Angular-CLI switched to webpack, and... 
-  2. the CLI team had hidden the webpack config by default, (it's not a bug, it's a *[feature][angular-cli-meets-webpack]*) and were not planning on exposing it, at all. The only way you could expose the config was by '[ejecting][eject]' the cli, meaning I'd lose access to all the scripts provided by the cli, and would need to rewrite all my scripts to do without it. No, thank you. 
+  1. Most of the [old articles][cache-busting-angular-cli] on the subject were now deprecated since Angular-CLI switched to webpack, and... 
+  2. The CLI team had hidden the webpack config by default, (it's not a bug, it's a *[feature][angular-cli-meets-webpack]*) and were not planning on exposing it, at all. The only way you could expose the config was by '[ejecting][eject]' the cli, meaning I'd lose access to all the scripts provided by the cli, and would need to rewrite all my scripts to do without it. No, thank you. 
 
 Luckily, the fix was pretty easy. We run all of our build scripts straight from npm, so most of our scripts are launched from `package.json`. 
 
