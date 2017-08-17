@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to cache-bust with Angular CLI and Rails"
+title:  "Adventures in Cache-Busting with Angular CLI and Rails"
 date:   2017-08-16 17:24:47 -0500
 categories: ruby rails angular cache-busting fingerprinting
 ---
