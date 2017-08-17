@@ -24,7 +24,7 @@ twitter_username: semperfried
 github_username:  eprislac
 
 # theme: jekyll-theme-slate
-theme: minima
+theme: jekyll-theme-slate
 # Build settings
 markdown: kramdown
 plugins:
