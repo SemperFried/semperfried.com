@@ -23,7 +23,6 @@ url: "http://semperfried.com" # the base hostname & protocol for your site, e.g.
 twitter_username: semperfried
 github_username:  eprislac
 
-# theme: jekyll-theme-slate
 theme: jekyll-theme-slate
 # Build settings
 markdown: kramdown
