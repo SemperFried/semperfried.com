@@ -3,17 +3,11 @@ layout: page
 title: About
 permalink: /about/
 ---
+Eddie Prislac hails from Katy, TX, just outside west Houston.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-u can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Used to wear a uniform to work, now he rarely changes out of his pajamas
+(working remote is AWESOME).
 
+Eddie specializes in Javascript, Ruby, and Rails, but has been branching out into Typescript, Angular and React of late. He's also worked professionally in C#, PHP, Actionscript and VBScript, and used to do a lot of design work.
 
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+He currently works on Railroad19's NBC team, where he is a project co-lead for their PAM ad-sales software.
